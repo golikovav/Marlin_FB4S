@@ -123,6 +123,12 @@ typedef struct { int16_t value, celsius; } temp_entry_t;
 #if ANY_THERMISTOR_IS(30) // Kis3d Silicone mat 24V 200W/300W with 6mm Precision cast plate (EN AW 5083)
   #include "thermistor_30.h"
 #endif
+#if ANY_THERMISTOR_IS(40) // custom base on beta25 = 4092 K, R25 = 100 kOhm, Pull-up = 4.7 kOhm
+  #include "thermistor_40.h"
+#endif
+#if ANY_THERMISTOR_IS(41) // custom base on beta25 = 4092 K, R25 = 100 kOhm, Pull-up = 4.7 kOhm
+  #include "thermistor_41.h"
+#endif
 #if ANY_THERMISTOR_IS(51) // beta25 = 4092 K, R25 = 100 kOhm, Pull-up = 1 kOhm, "EPCOS"
   #include "thermistor_51.h"
 #endif
